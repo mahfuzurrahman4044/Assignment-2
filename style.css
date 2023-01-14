@@ -1,0 +1,71 @@
+body{
+    font-family: serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+
+}
+.options{
+    display: flex;
+    list-style: none;
+}
+.option{
+    padding-right: 20px;
+}
+.header-start{
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 15px;
+}
+.banner{
+    display: grid;
+    text-align: center;
+}
+
+
+/*Second Section*/
+
+.image{
+    width: 700px;
+    height: 700px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.team{
+    height: 340px;
+    width: 340px;
+}
+.section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 100px 50px 100px;
+}
+
+
+/*Third Section*/
+
+.description{
+    display: flex;
+}
+.btn{
+    font-size: 40px;
+    font-weight: bolder;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 68px;
+    right: 322px;
+}
+
+
+/*Fourth Section*/
+
+.achievement{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 60px;
+}
