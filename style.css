@@ -32,14 +32,8 @@ body{
 /*Second Section*/
 
 .image{
-    width: 700px;
-    height: 700px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-}
-.team{
-    height: 340px;
-    width: 340px;
 }
 .second-section{
     display: flex;
@@ -105,25 +99,30 @@ p{
 /*Media Query*/
 
 @media screen and (max-width:688px){
-    .header, .banner,.second-section, .second-section-summary, .description, .final-section, .bonus-section{
+    .first-section, .header, .header-start, .header ul, .banner, .banner .img, .second-section{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .first-section .banner li img{
-        width: 500px;
+    .banner{
+        position: relative;
+        left: 30px;
     }
-    .description .img-btn img{
+    .banner .img{
+        height: 600px;
+    }
+    .description div .img{
         padding-top: 20px;
     }
-    .description .img-btn{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
     }
-    .description .img-btn .btn{
+@media screen and (max-width:688px){
+    .description .btn{
         position: relative;
-        left: 25px;
+        left: 200px;
+        bottom: 120px;
     }
+}
+    
     .achievement{
         display: flex;
         flex-direction: column;
