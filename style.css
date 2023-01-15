@@ -69,3 +69,22 @@ body{
     justify-content: space-around;
     padding-bottom: 60px;
 }
+
+
+/*Final Section*/
+
+.sponsers{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 30px;
+}
+
+
+/*Bonus Section*/
+
+.bonus-section{
+    background-color:thistle;
+}
+p{
+    color: white;
+}
