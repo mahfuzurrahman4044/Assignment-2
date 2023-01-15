@@ -147,7 +147,7 @@ p{
         position: relative;
         left: 50px;
     }
-}
+
 @media screen and (max-width:576px){
     .second-section .image{
         display: grid;
@@ -155,5 +155,9 @@ p{
         gap: 20px;
         position: relative;
         left: 100px;
+    }
+    .lorem{
+        position: relative;
+        left: 60px;
     }
 }
