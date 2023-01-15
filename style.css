@@ -1,3 +1,6 @@
+ul li{
+    list-style: none;
+}
 body{
     font-family: serif;
 }
@@ -5,6 +8,7 @@ body{
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
+    padding-left: 25px;
 
 }
 .options{
@@ -17,7 +21,7 @@ body{
 .header-start{
     font-size: 30px;
     font-weight: bold;
-    padding-left: 15px;
+    padding-left: 20px;
 }
 .banner{
     display: grid;
@@ -37,7 +41,7 @@ body{
     height: 340px;
     width: 340px;
 }
-.section{
+.second-section{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -69,6 +73,10 @@ body{
     justify-content: space-around;
     padding-bottom: 60px;
 }
+.achievement div:hover{
+    transform: scale(1.25);
+    transition: transform 1s linear;
+}
 
 
 /*Final Section*/
@@ -79,6 +87,10 @@ body{
     padding: 10px 30px;
 }
 
+.finish{
+    border: 1px; border-radius: 5px; background-color: aqua; height: 50px; width: 800px; position: relative; left: 340px;margin: 50px 0px;
+}
+
 
 /*Bonus Section*/
 
@@ -87,4 +99,62 @@ body{
 }
 p{
     color: white;
+}
+
+
+/*Media Query*/
+
+@media screen and (max-width:688px){
+    .header, .banner,.second-section, .second-section-summary, .description, .final-section, .bonus-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .first-section .banner li img{
+        width: 500px;
+    }
+    .description .img-btn img{
+        padding-top: 20px;
+    }
+    .description .img-btn{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .description .img-btn .btn{
+        position: relative;
+        left: 25px;
+    }
+    .achievement{
+        display: flex;
+        flex-direction: column;
+    }
+    .box{
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    .sponsers{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .heading{
+        position: relative;
+        right: 50px;
+    }
+    .finish{
+        position: relative;
+        left: 20px;
+    }
+    .bonus-section{
+        position: relative;
+        left: 50px;
+    }
+}
+@media screen and (max-width:576px){
+    .second-section .image{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        position: relative;
+        left: 100px;
+    }
 }
